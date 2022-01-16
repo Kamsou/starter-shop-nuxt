@@ -1,5 +1,7 @@
 <script setup>
-  const { data: products } = await useFetch('http://localhost:1337/api/products')
+  const { data: products } = await useFetch('http://localhost:1337/api/products?populate=image')
+
+  console.log(products.value);
 </script>
 
 <template>
